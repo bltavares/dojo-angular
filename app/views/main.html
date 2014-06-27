@@ -1,0 +1,15 @@
+<form>
+  <input ng-model="newTaskTitle"/>
+  <button type="submit" ng-click="addItem()">Vai</button>
+</form>
+
+
+<p>Number of task to do: {{items.length}}</p>
+<p>Number of task to do: {{ (items | filter:{done: true}).length }} </p>
+
+<ul>
+<li ng-repeat="item in items">
+  <input type="checkbox" ng-model="item.done"/>
+  {{item.title}}
+</li>
+</ul>
