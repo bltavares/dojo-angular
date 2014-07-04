@@ -22,11 +22,11 @@ describe('Controller: MainCtrl', function () {
 
   it('can add items', function () {
     scope.newTaskTitle = 'Hello';
-    
+
     scope.addItem();
-    
+
     expect(scope.items).toEqual([{ title: 'Hello', done: false }]);
     expect(scope.newTaskTitle).toEqual('');
-  }); 
+  });
 
 });
