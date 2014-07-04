@@ -1,3 +1,5 @@
+<H3>My TODO list</H3>
+
 <form>
   <input ng-model="newTaskTitle"/>
   <button type="submit" ng-click="addItem()">Vai</button>
@@ -5,7 +7,7 @@
 
 
 <p>Number of task to do: {{items.length}}</p>
-<p>Number of task to do: {{ (items | filter:{done: true}).length }} </p>
+<p>Number of task done: {{ (items | filter:{done: true}).length }} </p>
 
 <ul>
 <li ng-repeat="item in items">
