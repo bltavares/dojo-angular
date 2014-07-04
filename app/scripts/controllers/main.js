@@ -8,7 +8,7 @@
  * Controller of the dojoAngularApp
  */
 angular.module('dojoAngularApp')
-  .controller('MainCtrl', function ($scope, $filter) {
+  .controller('MainCtrl', function ($scope) {
     $scope.items = [];
 
     $scope.addItem = function () {
